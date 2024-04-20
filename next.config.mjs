@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export", // Habilita as exportações estáticas
-  reactStrictMode: true,
-};
+const nextConfig = {};
 
-module.exports = nextConfig;
+export default nextConfig;
