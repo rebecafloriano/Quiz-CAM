@@ -24,9 +24,9 @@ export const QuestionItem = ({question, count, onAnswer}: Props) => {
   }
   return (
     <div>
-       <div className="text-3xl font-bold mb-5">{count}. {question.question}</div> 
+       <div className="text-3xl font-bold mb-5">{count}. {question?.question}</div> 
        <div>
-        {question.options.map((item, key) => (
+        {question?.options.map((item, key) => (
           <div
           key={key}
           onClick={() => checkQuestion(key)}
