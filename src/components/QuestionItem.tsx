@@ -37,9 +37,12 @@ export const QuestionItem = ({question, count, onAnswer}: Props) => {
           
           
           `}
+          
           >{item}</div>
+          
         ))}
        </div>
+      
 
     </div>
   )

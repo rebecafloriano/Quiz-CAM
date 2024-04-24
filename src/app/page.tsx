@@ -55,6 +55,9 @@ const Page = () => {
               onAnswer={handleAnswered}
             />
           }
+          <div className="flex justify-center items-center">
+            <button className="bg-yellow-400 px-3 py-2 rounded-lg border border-yellow-500 hover:bg-opacity-50">Próxima</button>
+          </div>
           {showResult &&
             <Results questionList={questions} answers={answers} />
           }
@@ -63,12 +66,14 @@ const Page = () => {
           {!showResult &&
             `${currentQuestionIndex + 1} de ${questions.length} ${questions.length > 1 ? 'perguntas' : 'pergunta'}`
           }
+
           {showResult &&
             <button onClick={handleRestartButton} className="px-3 py-2 rounded-md bg-blue-800 text-white">Reiniciar Quiz</button>
           }
+
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
